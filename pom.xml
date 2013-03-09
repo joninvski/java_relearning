@@ -34,6 +34,12 @@
             <version>1.2.17</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <!-- To run with mvn exec:java -->
