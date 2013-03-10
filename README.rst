@@ -1,3 +1,4 @@
+
 Global
 ======
 
@@ -16,3 +17,8 @@ In main
 * If I have some global DB connection (service) I just create the instance and then bind the DB connector interface to that instance. whoever uses the DB connection now has a connectionto it (think if it has to be singleton as guice has an option for that)
 
 * Factories are binded by interface to class
+
+Notes
+=====
+
+The log4j example is not the best as I could simply use sl4j (abstracts the logging class used)

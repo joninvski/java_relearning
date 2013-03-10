@@ -3,14 +3,16 @@ package com.pifactorial.relearningjaba.log;
 import org.apache.log4j.Logger;
 
 public class Log4jLog implements ILogger {
-    // private final Logger logger;
     
     public Log4jLog() {
-        // this.logger = make();
     }
 
     public static Logger make() {
-        return Logger.getLogger("class");
+        // Throwable t = new Throwable();
+        // StackTraceElement directCaller = t.getStackTrace()[1];
+        // System.out.println(directCaller.getClassName().toString());
+        // return Logger.getLogger(directCaller.getClassName());
+        return Logger.getLogger("ola");
     }
 
     @Override
