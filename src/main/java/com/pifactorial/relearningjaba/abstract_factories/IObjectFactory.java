@@ -8,6 +8,6 @@ import com.pifactorial.relearningjaba.model.IObject;
  */
 public interface IObjectFactory 
 {
-    public IObject getObject(String objectName);
+    public IObject create(String objectName);
 }
 
