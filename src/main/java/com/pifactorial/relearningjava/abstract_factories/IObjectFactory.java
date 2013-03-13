@@ -1,6 +1,6 @@
-package com.pifactorial.relearningjaba.abstract_factories;
+package com.pifactorial.relearningjava.abstract_factories;
 
-import com.pifactorial.relearningjaba.model.IObject;
+import com.pifactorial.relearningjava.model.IObject;
 
 /**
  * Hello world!

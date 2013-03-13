@@ -1,4 +1,4 @@
-package com.pifactorial.relearningjaba.model;
+package com.pifactorial.relearningjava.model;
 
 public interface IObject {
     

@@ -1,9 +1,10 @@
-package com.pifactorial.relearningjaba;
+package com.pifactorial.relearningjava;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.pifactorial.relearningjaba.module.SomeServiceModule;
-import com.pifactorial.relearningjaba.service.SomeService;
+import com.pifactorial.relearningjava.model.ConcreteObject;
+import com.pifactorial.relearningjava.module.SomeServiceModule;
+import com.pifactorial.relearningjava.service.SomeService;
 
 public class App 
 {
@@ -15,7 +16,7 @@ public class App
         System.out.println("Testing!");
         Injector injector = Guice.createInjector(new SomeServiceModule());
         SomeService service = injector.getInstance(SomeService.class);
-        service.doStuff();
+        service.doStuff(new ConcreteObject("Some name"));
     }
 
     public static void main( String[] args )

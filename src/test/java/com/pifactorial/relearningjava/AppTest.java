@@ -1,8 +1,13 @@
-package com.pifactorial.relearningjaba;
+package com.pifactorial.relearningjava;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.pifactorial.relearningjava.module.SomeServiceModule;
 
 /**
  * Unit test for simple App.
@@ -10,6 +15,7 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+    final Logger log = LoggerFactory.getLogger(SomeServiceModule.class);
     /**
      * Create the test case
      *
@@ -33,6 +39,7 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        log.debug("Testing");
+        
     }
 }
